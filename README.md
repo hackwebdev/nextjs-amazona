@@ -19,3 +19,13 @@ instead of
 ### Note:
 
 - I did not "Fix material-ui SSR issue"
+
+### Mock data
+
+utils/data.js
+const data = {
+products: [
+{....
+
+used in a map
+data.products.map(product=>())

@@ -15,3 +15,7 @@ instead of
 
 - classes.main
 - classes.navbar
+
+### Note:
+
+- I did not "Fix material-ui SSR issue"

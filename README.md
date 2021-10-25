@@ -29,3 +29,10 @@ products: [
 
 used in a map
 data.products.map(product=>())
+
+### Router
+
+- product/[slug].js
+- To get the slug value:
+  - console.log(router)
+  - const { slug } = router.query

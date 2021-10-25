@@ -1,22 +1,36 @@
-import { AppBar, Container, Toolbar, Typography } from '@material-ui/core'
-import Head from 'next/head'
+import NextLink from 'next/link'
+import { AppBar, Toolbar, Typography, Container, Link } from '@material-ui/core'
 import useStyles from '../utils/styles'
+import Head from 'next/head'
 
 export default function Layout({ children }) {
   const classes = useStyles()
-  const { main, navbar, footer } = classes
+
   return (
     <div>
       <Head>
         <title>Next Amazona</title>
       </Head>
-      <AppBar position='static' className={navbar}>
+      <AppBar position='static' className={classes.navbar}>
         <Toolbar>
-          <Typography>amazona</Typography>
+          <NextLink href='/' passHref>
+            <Link>
+              <Typography className={classes.brand}>amazona</Typography>
+            </Link>
+          </NextLink>
+          <div className={classes.grow}></div>
+          <div>
+            <NextLink href='/cart' passHref>
+              <Link>Cart</Link>
+            </NextLink>
+            <NextLink href='/login' passHref>
+              <Link>Login</Link>
+            </NextLink>
+          </div>
         </Toolbar>
       </AppBar>
-      <Container className={main}>{children}</Container>
-      <footer className={footer}>
+      <Container className={classes.main}>{children}</Container>
+      <footer className={classes.footer}>
         <Typography>All rights reserve . Next Amazona</Typography>
       </footer>
     </div>

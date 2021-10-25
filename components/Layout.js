@@ -3,13 +3,14 @@ import { AppBar, Toolbar, Typography, Container, Link } from '@material-ui/core'
 import useStyles from '../utils/styles'
 import Head from 'next/head'
 
-export default function Layout({ children }) {
+export default function Layout({ title, description, children }) {
   const classes = useStyles()
 
   return (
     <div>
       <Head>
-        <title>Next Amazona</title>
+        <title>{title ? `${title} - Next Amazona` : 'Next Amazona'}</title>
+        {description && <meta name='description' content={description}></meta>}
       </Head>
       <AppBar position='static' className={classes.navbar}>
         <Toolbar>

@@ -44,3 +44,8 @@ data.products.map(product=>())
 - Run compass
   - $ compass
     admin/Bernardo
+
+### Products API
+
+Data seeded to mongoDB database:
+http://localhost:3000/api/seed

@@ -36,3 +36,11 @@ data.products.map(product=>())
 - To get the slug value:
   - console.log(router)
   - const { slug } = router.query
+
+### Mongo DB
+
+- Run mongodb
+  - $ mongodb
+- Run compass
+  - $ compass
+    admin/Bernardo

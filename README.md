@@ -53,3 +53,9 @@ http://localhost:3000/api/seed
 ### Seed
 
 localhost:3000/api/seed
+
+### Lesson 22
+
+error line 12 Store.js
+Fix:
+$ npm i js-cookie@2.2.1

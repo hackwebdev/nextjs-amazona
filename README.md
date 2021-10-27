@@ -49,3 +49,7 @@ data.products.map(product=>())
 
 Data seeded to mongoDB database:
 http://localhost:3000/api/seed
+
+### Seed
+
+localhost:3000/api/seed
